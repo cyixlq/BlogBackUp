@@ -2,12 +2,12 @@
 title: 关于我
 date: 2018-05-20 14:10:00
 type: "about"
-comments: false
+comments: true
 ---
-### 一位刚刚起步的小码农，在这段代码人生的路上还请大家多多指教！
+### 一位刚刚起步的小码农，在这段代码人生的路上还请大家多多指教！如果大家有什么对我想说的请在文末进行留言！
 #### 这些是我喜欢听的歌：
 
-<embed src="//music.163.com/style/swf/widget.swf?sid=2233853611&type=0&auto=1&width=310&height=430" width="330" height="450"  allowNetworking="all"></embed>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=450 src="//music.163.com/outchain/player?type=0&id=2233853611&auto=1&height=430"></iframe>
 
 #### 以下是我的个人简历：
 <center><h1>陈洋的个人简历</h1></center>
@@ -20,8 +20,7 @@ comments: false
 |Q  Q :|2421597157|微信:|aini19971025|
 |专业:|软件技术|居住地:|杭州|
 |年龄:|21|GitHub:|https://github.com/cyixlq|
-|简书:|https://www.jianshu.com/u/323edc6598aa|
-|个人博客:|https://cyixlq.github.io/|
+|简书:|https://www.jianshu.com/u/323edc6598aa|个人博客:|https://cyixlq.github.io/|
 
 ## 求职意向
 |工作性质:|全职|
