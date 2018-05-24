@@ -126,8 +126,8 @@ scheme: Gemini
 social:
   GitHub: https://github.com/cyixlq || github
   E-Mail: mailto:cyixlq@gmail.com || envelope
-  简书: https://www.jianshu.com/u/323edc6598aa
-  QQ: http://wpa.qq.com/msgrd?v=3&uin=2421597157&site=qq&menu=yes
+  简书: https://www.jianshu.com/u/323edc6598aa || bookmark
+  QQ: http://wpa.qq.com/msgrd?v=3&uin=2421597157&site=qq&menu=yes || qq
   #Google: https://plus.google.com/yourname || google
   #Twitter: https://twitter.com/yourname || twitter
   #FB Page: https://www.facebook.com/yourname || facebook
@@ -141,8 +141,6 @@ social_icons:
   enable: true
   icons_only: false
   transition: false
-  简书: bookmark
-  QQ: qq
 
 # Blog rolls
 links_icon: link
@@ -381,8 +379,8 @@ changyan:
 # more info please open https://valine.js.org
 valine:
   enable: false
-  appid: 2X2PlRj4aUVXgN2df4aKvsN3-gzGzoHsz
-  appkey: 3WA1KotkXIQEgYfU3V9CDtx0
+  appid: 
+  appkey: 
   notify: false # mail notifier , https://github.com/xCss/Valine/wiki
   verify: false # Verification code
   placeholder: Just go go # comment box placeholder
@@ -533,9 +531,9 @@ rating:
 # Show number of visitors to each article.
 # You can visit https://leancloud.cn get AppID and AppKey.
 leancloud_visitors:
-  enable: false
-  app_id: #<app_id>
-  app_key: #<app_key>
+  enable: true
+  app_id: 2X2PlRj4aUVXgN2df4aKvsN3-gzGzoHsz
+  app_key: 3WA1KotkXIQEgYfU3V9CDtx0
 
 # Another tool to show number of visitors to each article.
 # visit https://console.firebase.google.com/u/0/ to get apiKey and projectId
