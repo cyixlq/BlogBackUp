@@ -6,6 +6,7 @@ tags: [自定义View实战]
 ---
 
 不久之前写过一篇基础的自定义View的博文，今天就来实践一下自定义View，参考了网上一个自定义View控件的博文完成的（毕竟还是小白）。以下是我完成的一些步骤：  
+<!-- more -->
 1. 首先肯定需要编写一个类，让它继承自View（感觉我这个简单的自定义view继承RelativeLayout就够了），然后重写构造方法咯，这个简单，代码如下（一般大家都重写三个构造方法，虽然不太理解，但是对于我这个简单的自定义View是重写两个构造方法是能实现的）：
 ```
 public class QuanView extends RelativeLayout{
@@ -21,7 +22,7 @@ public class QuanView extends RelativeLayout{
 }
 ```
 2. 然后就是初始化画笔，然后设定一些属性咯，所以现在的代码如下：
-<!-- more -->
+
 ```
 public class QuanView extends RelativeLayout{
 
