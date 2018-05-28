@@ -20,7 +20,7 @@ comments: true
 |Q  Q :|2421597157|微信:|aini19971025|
 |专业:|软件技术|居住地:|杭州|
 |年龄:|21|GitHub:|https://github.com/cyixlq|
-|简书:|https://www.jianshu.com/u/323edc6598aa|个人博客:|https://cyixlq.github.io/blog/|
+|简书:|https://www.jianshu.com/u/323edc6598aa|个人博客:|https://cyixlq.github.io/|
 
 ## 求职意向
 |工作性质:|全职|
