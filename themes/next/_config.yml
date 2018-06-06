@@ -75,7 +75,7 @@ seo: true
 
 # If true, will add site-subtitle to index page, added in main hexo config.
 # subtitle: Subtitle
-index_with_subtitle: false
+index_with_subtitle: true
 
 
 # ---------------------------------------------------------------
@@ -89,6 +89,7 @@ index_with_subtitle: false
 # Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, question icon will be loaded.
 menu:
   home: / || home
+  book: /book/ || book
   about: /about/ || user
   tags: /tags/ || tags
   categories: /categories/ || th
@@ -125,8 +126,8 @@ scheme: Gemini
 social:
   GitHub: https://github.com/cyixlq || github
   E-Mail: mailto:cyixlq@gmail.com || envelope
-  简书: https://www.jianshu.com/u/323edc6598aa
-  QQ: http://wpa.qq.com/msgrd?v=3&uin=2421597157&site=qq&menu=yes
+  简书: https://www.jianshu.com/u/323edc6598aa || bookmark
+  QQ: http://wpa.qq.com/msgrd?v=3&uin=2421597157&site=qq&menu=yes || qq
   #Google: https://plus.google.com/yourname || google
   #Twitter: https://twitter.com/yourname || twitter
   #FB Page: https://www.facebook.com/yourname || facebook
@@ -140,8 +141,6 @@ social_icons:
   enable: true
   icons_only: false
   transition: false
-  简书: bookmark
-  QQ: qq
 
 # Blog rolls
 links_icon: link
@@ -380,8 +379,8 @@ changyan:
 # more info please open https://valine.js.org
 valine:
   enable: false
-  appid: 2X2PlRj4aUVXgN2df4aKvsN3-gzGzoHsz
-  appkey: 3WA1KotkXIQEgYfU3V9CDtx0
+  appid: 
+  appkey: 
   notify: false # mail notifier , https://github.com/xCss/Valine/wiki
   verify: false # Verification code
   placeholder: Just go go # comment box placeholder
@@ -426,7 +425,7 @@ baidushare: true
 # This plugin is more useful in China, make sure you known how to use it.
 # And you can find the use guide at official webiste: http://www.jiathis.com/.
 # Warning: JiaThis does not support https.
-#jiathis:
+jiathis: true
   ##uid: Get this uid from http://www.jiathis.com/
 #add_this_id:
 
@@ -532,9 +531,9 @@ rating:
 # Show number of visitors to each article.
 # You can visit https://leancloud.cn get AppID and AppKey.
 leancloud_visitors:
-  enable: false
-  app_id: #<app_id>
-  app_key: #<app_key>
+  enable: true
+  app_id: 2X2PlRj4aUVXgN2df4aKvsN3-gzGzoHsz
+  app_key: 3WA1KotkXIQEgYfU3V9CDtx0
 
 # Another tool to show number of visitors to each article.
 # visit https://console.firebase.google.com/u/0/ to get apiKey and projectId
@@ -550,19 +549,19 @@ firestore:
 # Get more information on http://ibruce.info/2015/04/04/busuanzi/
 busuanzi_count:
   # count values only if the other configs are false
-  enable: false
+  enable: true
   # custom uv span for the whole site
   site_uv: true
-  site_uv_header: <i class="fa fa-user"></i>
-  site_uv_footer:
+  site_uv_header: <i class="fa fa-user"></i>本站访客数
+  site_uv_footer: 人次
   # custom pv span for the whole site
   site_pv: true
-  site_pv_header: <i class="fa fa-eye"></i>
-  site_pv_footer:
+  site_pv_header: <i class="fa fa-eye"></i>本站总访问量
+  site_pv_footer: 次
   # custom pv span for one page only
-  page_pv: true
-  page_pv_header: <i class="fa fa-file-o"></i>
-  page_pv_footer:
+  page_pv: false
+  page_pv_header: <i class="fa fa-file-o"></i>本文总阅读量
+  page_pv_footer: 次
 
 
 # Tencent analytics ID
@@ -573,7 +572,7 @@ busuanzi_count:
 
 
 # Enable baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO
-baidu_push: false
+baidu_push: true
 
 # Google Calendar
 # Share your recent schedule to others via calendar page

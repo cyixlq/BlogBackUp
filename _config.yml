@@ -4,17 +4,17 @@
 
 # Site
 title: Cy个人博客
-subtitle:
-description: I am Yang , and I am young !
-keywords:
+subtitle: I am Yang , and I am young !
+description: Cy的个人博客
+keywords: cyixlq,Cy的个人博客,Cy,陈洋,Android,Vue,PHP
 author: Cy
 language: zh-Hans
 timezone: UTC
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://cyixlq.github.io/blog
-root: /blog/
+url: http://cyixlq.top
+root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
@@ -50,7 +50,7 @@ highlight:
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
   path: ''
-  per_page: 10
+  per_page: 5
   order_by: -date
   
 # Category & Tag
@@ -80,7 +80,7 @@ theme: next
 deploy:
   type: git
   branch: master
-  repository: git@github.com:cyixlq/blog.git
+  repository: git@github.com:cyixlq/cyixlq.github.io.git
 
 # 本地搜索
 search:
