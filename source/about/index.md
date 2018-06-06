@@ -21,7 +21,7 @@ comments: false
 |专业:|软件技术|居住地:|杭州|
 |年龄:|21|GitHub:|https://github.com/cyixlq|
 |简书:|https://www.jianshu.com/u/323edc6598aa|
-|个人博客:|https://cyixlq.github.io/|
+|个人博客:|https://cyixlq.top|
 
 ## 求职意向
 |工作性质:|全职|
