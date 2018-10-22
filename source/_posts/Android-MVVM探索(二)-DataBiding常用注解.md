@@ -9,7 +9,6 @@ categories: Android
 <!-- more -->
 ## Android MVVM探索系列
 [Android MVVM探索(一) - DataBiding初解]("http://cyixlq.top/2018/10/22/Android MVVM探索(一) - DataBiding初解/")
-
 ### 6， 一些常用注解说明
 - @BidingAdapter
     
@@ -102,3 +101,4 @@ categories: Android
         boolean requireAll() default true;
     }
     ```
+### 未完待续！！！请拭目以待！
