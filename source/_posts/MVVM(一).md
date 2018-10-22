@@ -184,7 +184,7 @@ class MainActivity : AppCompatActivity() {
         // ActionBar actionBar = getActionBar();
         // if (actionBar != null) actionBar.hide()
         ```
-    2. 新建一个layout_titlt_bar.xml，内容如下：
+    2. 新建一个layout_title_bar.xml，内容如下：
         ```
         <layout xmlns:android="http://schemas.android.com/apk/res/android">
             <data>
