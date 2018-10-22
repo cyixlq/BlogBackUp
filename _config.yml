@@ -80,7 +80,7 @@ theme: next
 deploy:
   type: git
   branch: master
-  repository: https://github.com/cyixlq/cyixlq.github.io.git
+  repository: git@github.com:cyixlq/cyixlq.github.io.git
 
 # 本地搜索
 search:
