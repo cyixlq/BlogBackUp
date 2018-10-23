@@ -8,10 +8,14 @@ categories: Android
 
 今天我想给大家讲讲DataBinding，为了保证我写的不会出错，我也借鉴参考了不少文章和视频。给大家看看一篇我个人觉得还不错的。[DataBinding最全使用说明（掘金博客）](https://juejin.im/post/5a55ecb6f265da3e4d7298e9)还有某课网的视频，[Android Data Binding实战-入门篇](https://www.imooc.com/learn/719)、[Android Data Binding实战-高级篇](https://www.imooc.com/learn/720)
 
+[本篇文章代码地址](https://github.com/cyixlq/MVVMTest)
+
 <!-- more -->
 
 ## Android MVVM探索系列
-[Android MVVM探索(二) - DataBiding常用注解]("http://cyixlq.top/2018/10/23/Android-MVVM探索(二) - DataBiding常用注解/")
+[Android MVVM探索(一) - DataBiding初解](https://cyixlq.top/2018/10/22/MVVM1/)
+
+[Android MVVM探索(二) - DataBiding常用注解](https://cyixlq.top/2018/10/23/MVVM2/)
 
 ### 1, 什么是DataBinding？
 
@@ -402,4 +406,4 @@ val text = ObservableField<String>("")
 ```
 这样做完之后，我们在输入框中输入什么，我们在TextView上面看到的就是什么。这样就实现了双向绑定。我们不然发现，我们实现双向绑定其实就是多加了一个“ = ”！
 
-## OK，这一小章节我们就先到这里了，下一章节我们就介绍一下DataBinding的一些常用注解！
+## OK，这一小章节我们就先到这里了，下一章节我们就介绍一下DataBinding的一些常用注解！另外本章节中出现的问题还望大家留言指正，毕竟还是在MVVM探索道路中！

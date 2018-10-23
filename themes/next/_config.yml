@@ -23,9 +23,9 @@ cache:
 # For example, you put your favicons into `hexo-site/source/images` directory.
 # Then need to rename & redefine they on any other names, otherwise icons from Next will rewrite your custom icons in Hexo.
 favicon:
-  small: /images/favicon-16x16-next.png
-  medium: /images/favicon-32x32-next.png
-  apple_touch_icon: /images/apple-touch-icon-next.png
+  small: /images/favicon.ico
+  medium: /images/favicon.ico
+  apple_touch_icon: /images/favicon.ico
   safari_pinned_tab: /images/logo.svg
   #android_manifest: /images/manifest.json
   #ms_browserconfig: /images/browserconfig.xml
@@ -127,13 +127,14 @@ social:
   GitHub: https://github.com/cyixlq || github
   E-Mail: mailto:cyixlq@gmail.com || envelope
   简书: https://www.jianshu.com/u/323edc6598aa || bookmark
+  掘金: https://juejin.im/user/5b5ed95b6fb9a04f93300c3a || bookmark
   QQ: http://wpa.qq.com/msgrd?v=3&uin=2421597157&site=qq&menu=yes || qq
   #Google: https://plus.google.com/yourname || google
   #Twitter: https://twitter.com/yourname || twitter
   #FB Page: https://www.facebook.com/yourname || facebook
   #VK Group: https://vk.com/yourname || vk
   #StackOverflow: https://stackoverflow.com/yourname || stack-overflow
-  #YouTube: https://youtube.com/yourname || youtube
+  YouTube: https://www.youtube.com/channel/UCmV99HA9H61r4F8nPew5fag?view_as=subscriber || youtube
   #Instagram: https://instagram.com/yourname || instagram
   #Skype: skype:yourname?call|chat || skype
 
