@@ -14,6 +14,8 @@ categories: Android
 
 [Android MVVM探索(二) - DataBiding常用注解](https://cyixlq.top/2018/10/23/MVVM2/)
 
+[Android MVVM探索(三) - ViewModel，DataBinding，LiveData混合三打](https://cyixlq.top/2018/10/29/MVVM3/)
+
 ### 6， 一些常用注解说明
 - @BidingAdapter
     

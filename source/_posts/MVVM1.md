@@ -12,10 +12,11 @@ categories: Android
 
 <!-- more -->
 
-## Android MVVM探索系列
 [Android MVVM探索(一) - DataBiding初解](https://cyixlq.top/2018/10/22/MVVM1/)
 
 [Android MVVM探索(二) - DataBiding常用注解](https://cyixlq.top/2018/10/23/MVVM2/)
+
+[Android MVVM探索(三) - ViewModel，DataBinding，LiveData混合三打](https://cyixlq.top/2018/10/29/MVVM3/)
 
 ### 1, 什么是DataBinding？
 
