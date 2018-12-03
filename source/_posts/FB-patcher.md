@@ -4,10 +4,6 @@ date: 2018-12-03 17:21:47
 tags: [黑苹果,显卡]
 categories: 黑苹果
 ---
-
-【黑苹果显卡驱动】通过Device/properties 给Framebuffer打补丁一点经验
- 已发布
-
 ### 本文参考[Coffee Lake帧缓冲区补丁及UHD630 Coffee Lake ig-platform-id数据整理](https://blog.daliansky.net/Coffee-Lake-frame-buffer-patch-and-UHD630-Coffee-Lake-ig-platform-id-data-finishing.html)，算是对文章的一种补充吧！注意，本片文章不适合小白阅读！
 
 <!-- more -->
