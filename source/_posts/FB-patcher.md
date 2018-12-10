@@ -1,10 +1,10 @@
 ---
 title: 【黑苹果显卡驱动】通过Device/properties 给Framebuffer打补丁一点经验
 date: 2018-12-03 17:21:47
-tags: [黑苹果,显卡]
+tags: [黑苹果,显卡驱动]
 categories: 黑苹果
 ---
-### 本文参考[Coffee Lake帧缓冲区补丁及UHD630 Coffee Lake ig-platform-id数据整理](https://blog.daliansky.net/Coffee-Lake-frame-buffer-patch-and-UHD630-Coffee-Lake-ig-platform-id-data-finishing.html)，算是对文章的一种补充吧！注意，本片文章不适合小白阅读！
+### 本文参考[Coffee Lake帧缓冲区补丁及UHD630 Coffee Lake ig-platform-id数据整理](https://blog.daliansky.net/Coffee-Lake-frame-buffer-patch-and-UHD630-Coffee-Lake-ig-platform-id-data-finishing.html)，算是对文章的一种补充吧！注意，本篇文章不适合小白阅读！
 
 <!-- more -->
 
@@ -57,12 +57,13 @@ DevicePath = PciRoot(0x0)/Pci(0x2,0x0)
 DATA数据：01000000 -> 1（启用）    00000000 -> 0（不启用）
 NUMBER数据：0（不启用）   1（启用）
 
-2. framebuffer-stolenmem（BIOS中DVMT大小，会影响高分屏，这个值必须大于32M）：
-一般1080P屏幕的话，设置为48M就够用了：00000003
+2. framebuffer-stolenmem（给BIOS中DVMT添加一点内存大小，会影响高分屏，这个值必须大于32M，也不应该过高）：
+一般1080P屏幕的话，设置为48M就够用了：00003001
 当你的笔记本电脑屏幕是2k，你可以设置为64M：00000004
 4K屏的话，要设置为128M：00000008
-保险起见，高分屏直接设置成128M比较稳
-（PS：这一部分可能有误，但是最后一句设置成128M是试验过的）
+如果你的BIOS中可以设置DVMT的话并且你设置成为128M之后，可以不需要设置这个属性，或者这个属性设置小一点：00003001
+保险起见，高分屏直接设置成128M比较稳，并且保证在BIOS能设置DVMT的情况下设置在64M或以下
+（PS：这一部分可能有误，但是最后一句保险起见，高分屏直接设置成128M比较稳是试验过的）
 
 3. framebuffer-unifiedmem（核显显存大小，调大一点可能能解决花屏）：
 2048M：00000080
