@@ -7,7 +7,7 @@ comments: true
 ### 一位刚刚起步的小码农，在这段代码人生的路上还请大家多多指教！如果大家有什么对我想说的请在文末进行留言！
 #### 这些是我喜欢听的歌：
 
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=450 src="//cyixlq.gitee.io/hiegher_music_app/#/iframe/2947517062/true"></iframe>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=450 src="http://cyixlq.gitee.io/hiegher_music_app/#/iframe/2947517062/true"></iframe>
 
 #### 以下是我的个人简历：
 <center><h1>陈洋的个人简历</h1></center>
@@ -20,7 +20,7 @@ comments: true
 |Q  Q :|2421597157|微信:|aini19971025|
 |专业:|软件技术|居住地:|杭州|
 |年龄:|21|GitHub:|https://github.com/cyixlq|
-|简书:|https://www.jianshu.com/u/323edc6598aa|个人博客:|https://cyixlq.top/|
+|简书:|https://www.jianshu.com/u/323edc6598aa|个人博客:|http://cyixlq.top/|
 
 ## 求职意向
 
