@@ -7,7 +7,7 @@ comments: true
 ### 一位刚刚起步的小码农，在这段代码人生的路上还请大家多多指教！如果大家有什么对我想说的请在文末进行留言！
 #### 这些是我喜欢听的歌：
 
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=450 src="//music.163.com/outchain/player?type=0&id=2233853611&auto=1&height=430"></iframe>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=450 src="//cyixlq.gitee.io/hiegher_music_app/#/iframe/2947517062/true"></iframe>
 
 #### 以下是我的个人简历：
 <center><h1>陈洋的个人简历</h1></center>
@@ -15,7 +15,7 @@ comments: true
 ## 个人资料
 |姓名:|陈洋|性别:|男|
 |:-|:-|:-|:-|
-|电话:|157****6151|学历:|大专|
+|电话:|157`****`6151|学历:|大专|
 |邮箱:|<cyixlq@gmail.com>|毕业院校:|九江职业大学|
 |Q  Q :|2421597157|微信:|aini19971025|
 |专业:|软件技术|居住地:|杭州|
@@ -43,6 +43,13 @@ comments: true
     - 项目地址：https://github.com/cyixlq/AimiStore_Vue
     - 项目描述：在实习期间和大学同学做的一个商城，我负责前端，他负责后端。由于后来比较忙，这个项目搁浅了。目前只实现了首页页面展示，商品分类展示，商品详情，商品规格选择，加入购物车，地址管理,登陆注册这些功能。本人审美有限，UI可能比较丑。使用了有赞的前端vue移动框架 - vant!登录使用了token验证机制，这才比较符合前后端分离嘛。
     - 项目收获：熟悉了Vue全家桶，为了做好这个项目，把vue-router和vuex这两个的文档认认真真读了一遍，还顺带把示例项目翻了个遍。
+
+- ### higher-music（Vue）
+    - 责任描述：合作开发
+    - 项目状态：开发中
+    - 项目演示：[ http://cyixlq.gitee.io/hiegher_music_app]( http://cyixlq.gitee.io/hiegher_music_app)
+    - 项目描述：在工作期间，利用空闲时间撸的一个小项目。一个网页版的音乐播放器，目前仍然在开发中，基本实现了在线音乐播放器中的功能。列表播放模式在最近的时间才会去做。个人认为项目中最牛逼点的功能就是音乐外链，如何使用此功能请参照：[https://gitee.com/cyixlq/hiegher_music_app/blob/master/README.md](https://gitee.com/cyixlq/hiegher_music_app/blob/master/README.md)。
+    - 项目收获：更熟悉了Vue全家桶，更深刻理解了组件化，熟悉了音乐播放器的逻辑处理。
 
 - ### 天猫首页
     - 项目地址：http://xuelingqiao.web3v.com/project/JS/index.html 
