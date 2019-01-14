@@ -4,13 +4,15 @@ date: 2018-05-20 14:10:00
 type: "about"
 comments: true
 ---
-### 一位刚刚起步的小码农，在这段代码人生的路上还请大家多多指教！如果大家有什么对我想说的请在文末进行留言！
-#### 这些是我喜欢听的歌：
+{% cq %}一位刚刚起步的小码农，在这段代码人生的路上还请大家多多指教。如果大家有什么对我想说的请在文末进行留言！{% endcq %}
 
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=450 src="http://cyixlq.gitee.io/hiegher_music_app/#/iframe/2947517062/true"></iframe>
+<h5>这些是我喜欢听的歌：</h5>
 
-#### 以下是我的个人简历：
-<center><h1>陈洋的个人简历</h1></center>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height=450 src="http://cyixlq.gitee.io/hiegher_music_app/#/iframe/2947517062/true"></iframe>
+
+
+
+{% cq %}## 陈洋的个人简历{% endcq %}
 
 ## 个人资料
 |姓名:|陈洋|性别:|男|
