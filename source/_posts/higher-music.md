@@ -7,7 +7,7 @@ categories: Vue
 ## higher-music
 一款基于Vue打造的网页在线音乐播放器，利用工作空闲时间与大学同学[@ganp1020](https://github.com/ganp1020)一起开发。目前正在开发阶段，已经能正常使用。<b>支持歌单外链这一特色功能！<b>
 
-项目演示地址：[http://cyixlq.gitee.io/](http://cyixlq.gitee.io/)
+项目演示地址：[http://cyixlq.gitee.io/music/](http://cyixlq.gitee.io/music/)
 
 <!-- more -->
 
