@@ -52,9 +52,9 @@ categories: Vue
 
 ![复制链接中的数字部分](https://images.gitee.com/uploads/images/2019/0114/094544_804b24f7_1329709.png "QQ20190114-094532.png")
 
-3. 在你博客中需要接入外链的地方加入以下代码(请注意，将下面链接中的`2947517062`替换成你上一步中复制的数字，如果不需要播放器自动播放请将下面`true`改成`false`，iframe的宽高你可以自定义，Chrome可能会禁止iframe内音频自动播放，你的博客不能为https站点，因为此网页中包含http请求，https站点下是不允许http请求的)：
+3. 在你博客中需要接入外链的地方加入以下代码(请注意，将下面链接中的`2947517062`替换成你上一步中复制的数字，如果不需要播放器自动播放请将下面`true`改成`false`，iframe的宽高你可以自定义，Chrome可能会禁止iframe内音频自动播放)：
     ```
-    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height=450 src="http://cyixlq.gitee.io/music/#/iframe/2947517062/true"></iframe>
+    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height=450 src="//cyixlq.gitee.io/music/#/iframe/2947517062/true"></iframe>
     ```
 4. 效果图如下：
 
