@@ -5,9 +5,10 @@ tags: [自定义View实战]
 categories: Android
 ---
 ## 前言
-公司正在开发一个商城项目，因为项目需要，做了一个仿拼多多的地址选择器，但是与拼多多实现方法有些出入，大体效果是差不多的。废话不多说，先上一张效果动图：
+公司正在开发一个商城项目，因为项目需要，做了一个仿拼多多的地址选择器，但是与拼多多实现方法有些出入，大体效果是差不多的。
+（2019年04月22日更新）最后决定还是单独提取出来做个demo给大家参考参考，地址：[https://github.com/cyixlq/AddressPickerDialog](https://github.com/cyixlq/AddressPickerDialog)
+废话不多说，先上一张效果动图：
 ![效果图.gif](https://upload-images.jianshu.io/upload_images/8654767-9055a2ffa9206627.gif?imageMogr2/auto-orient/strip)
-
 <!-- more -->
 ## 开始
 1. 先说说本文的一些概念。地区级别：就是比如省级，市级，县级，镇级，那么这种最多就是4级。
@@ -318,7 +319,8 @@ public class AddressBottomSheetDialog extends CustomBaseBottomSheetDialog {
                     final int lastClickPositon = levelPosition.get(position, -1); // 获取上一次选中的地区的position，如果找不到，默认返回-1
                     if (lastClickPositon >= 0) recyclerView.smoothScrollToPosition(lastClickPositon); // 如果上一次有选择，RecyclerView滚动到指定position
                 } else if (changeListener != null) {
-                    changeListener.onSelectChange(position, levelIds.get(position));
+                    // 参数position代表的当前地区级别，父级地区ID应该选当前级别的上一个级别，如果没有默认返回-1
+                    changeListener.onSelectChange(position, levelIds.get(position -1, -1));
                 }
             }
             @Override
@@ -488,3 +490,8 @@ private List<AddressItem> requestAddress(int level, int parentID) {
 2. SparseIntArray是什么？其实它就相当于SparseArray<Integer>，谷歌还为我们封装了其他基本数据类型的SparseArray，它们就是SparseBooleanArray和SparseLongArray，用法都是相似的。
 3. 为什么不使用一个成员变量来记录当前选中的tab的position，然后在onTabSelected中更新该成员变量？之前我是这么做的，但是会出奇怪的问题：在市级重新选择之后，移除后面的tab后再重新选县级之后，TabLayout的横线不会移动到镇级上了。不知道什么原因造成的，猜测可能是onTabSelected触发时机造成选中的Tab的position更新不及时。如果有知道的旁友还望不吝赐教。如下图：
 ![出现的问题.gif](https://upload-images.jianshu.io/upload_images/8654767-79c746e2ceeba935.gif?imageMogr2/auto-orient/strip)
+
+#### 20190422更新
+1. 将AddressItem中的ID修改为Object类型，以适配不同业务数据，其他地方也进行了相应的修改
+2. 添加全部地区选择完成结果回调事件
+3. 修改一些代码逻辑，有兴趣改善的请Pull request
