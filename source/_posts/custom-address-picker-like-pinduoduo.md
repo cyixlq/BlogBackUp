@@ -8,7 +8,7 @@ categories: Android
 公司正在开发一个商城项目，因为项目需要，做了一个仿拼多多的地址选择器，但是与拼多多实现方法有些出入，大体效果是差不多的。
 （2019年04月22日更新）最后决定还是单独提取出来做个demo给大家参考参考，地址：[https://github.com/cyixlq/AddressPickerDialog](https://github.com/cyixlq/AddressPickerDialog)
 废话不多说，先上一张效果动图：
-![效果图.gif](https://upload-images.jianshu.io/upload_images/8654767-9055a2ffa9206627.gif?imageMogr2/auto-orient/strip)
+![效果图.gif](https://user-gold-cdn.xitu.io/2019/4/19/16a336ef7fa4076c?w=528&h=931&f=gif&s=483905)
 <!-- more -->
 ## 开始
 1. 先说说本文的一些概念。地区级别：就是比如省级，市级，县级，镇级，那么这种最多就是4级。

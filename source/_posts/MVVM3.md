@@ -13,11 +13,11 @@ categories: Android
 <!-- more -->
 
 ## Android MVVM探索系列
-[Android MVVM探索(一) - DataBiding初解](https://cyixlq.top/2018/10/22/MVVM1/)
+[Android MVVM探索(一) - DataBiding初解](https://juejin.im/post/5bcdd069f265da0a96250bea)
 
-[Android MVVM探索(二) - DataBiding常用注解](https://cyixlq.top/2018/10/23/MVVM2/)
+[Android MVVM探索(二) - DataBiding常用注解](https://juejin.im/post/5bcdd0aff265da0abc2ba235)
 
-[Android MVVM探索(三) - ViewModel，DataBinding，LiveData混合三打](https://cyixlq.top/2018/10/29/MVVM3/)
+[Android MVVM探索(三) - ViewModel，DataBinding，LiveData混合三打](https://juejin.im/post/5bd6acd1e51d457a976637c3)
 
 ### Android Jetpack是谷歌为了帮助开发者们更快更高效地开发安卓应用而推出来的一套组件。Android Jetpack包含了开发库，工具以及最佳实践指南。而我们今天要讲的ViewModel类是属于Android Jetpack库中的lifecycle库。说到这，顺带解释以下。lifecycle，中文意思为生命周期。所以这个库的存在就跟它的中文含义一样，它可以有效避免内存泄漏和解决Android常见的生命周期难题。（如果各位看官不知道内存泄露的可以去好好补补课）lifecycle最近发布了2.0版本，在这个版本中，可以结合DataBinding进行使用，那可以说是方便太多了。
 
@@ -35,12 +35,12 @@ categories: Android
     > 它会在配置变更（即 Configuration Change，例如手机屏幕的旋转）之后继续存在。
     
     所以，ViewModel生命周期远比Activity，Fragment等生命周期更长，具体如下图所示。如果你这样做了，加入在屏幕旋转情况下，原Activity将会销毁，新的Activity将会被创建。而ViewModel会一直持有原Activity，这样便会造成内存泄漏。如果你的ViewModel确实需要Context，那么你的ViewModel可以继承AndroidViewModel，这样你的ViewModel中会有Application的引用。<br>
-    ![QQ截图20181029142003.png](https://upload-images.jianshu.io/upload_images/8654767-3367001936c06aac.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+    ![QQ截图20181029142003.png](https://user-gold-cdn.xitu.io/2018/10/29/166be937215a964e?w=513&h=455&f=png&s=93231)
 5. ViewModel不应当取代onSaveInstanceState方法。尽管ViewModel很出色了，但是它和onSaveInstanceState依然是相辅相成的作用。因为，当进程被关闭时，ViewModel将会被销毁，但是onSaveInstanceState不会受到影响。（个人猜想：比如在后台内存紧张情况下，你的应用处于后台被系统释放了，ViewModel会被销毁，但是你通过onSaveInstanceState存储下来的数据在你的应用重新回到前台时仍然可以被恢复）
-    ![QQ截图20181029143111.png](https://upload-images.jianshu.io/upload_images/8654767-0a4131db00ef8d7d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+    ![QQ截图20181029143111.png](https://user-gold-cdn.xitu.io/2018/10/29/166be937219baa6a?w=684&h=244&f=png&s=108534)
 
 6. ViewModel与Activity生命周期对比图：
-    ![viewmodel-lifecycle.png](https://upload-images.jianshu.io/upload_images/8654767-b7cb23337850512e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+    ![viewmodel-lifecycle.png](https://user-gold-cdn.xitu.io/2018/10/29/166be93721aea598?w=522&h=543&f=png&s=28358)
 
 #### 四，ViewModel的用法
 1. 引入lifecycle库：

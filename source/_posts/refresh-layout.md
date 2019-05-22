@@ -5,7 +5,7 @@ tags: [自定义View实战]
 categories: Android
 ---
 第一次尝试写一个下拉刷新控件，一开始的目的只是想了解dispatchTouchEvent，onInterceptTouchEvent和onTouchEvent这几个事件的分别，没想到最后竟然写了一个刷新控件。好的，废话不多说，先来看看效果图：
-![效果图.gif](https://upload-images.jianshu.io/upload_images/8654767-a5736b3b74ec2296.gif?imageMogr2/auto-orient/strip)
+![效果图.gif](https://user-gold-cdn.xitu.io/2019/2/19/16903fddf1c726c9?w=456&h=818&f=gif&s=233936)
 
 <!-- more -->
 
