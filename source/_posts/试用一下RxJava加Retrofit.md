@@ -6,8 +6,12 @@ tags: Android新技术笔记
 ---
 ### 前言
 这段时间我已经在一个公司实习了，虽然工资不高，我并没有太多的介意。但是有一点是我不舒服的，负责我们部门的经理助理似乎看不起实习生，对我有些轻蔑。主要是他技术也不是很牛逼那种。整个公司用的技术还是比较落后那种。当我推荐Vue时竟然说这种别人封装好的js不太好。当时内心有一千条草泥马奔跑，那你为什么还要用jQuery？so，我打算跳槽，跳去更有发展的公司，毕竟我现在是实习，主要还是希望得到成长~于是接到了一个安卓面试，所以特地前来写下这篇文章进行复习。（本人面试现在的公司就是来做安卓的，但是人手不够让我做做前端）
+
+<!-- more -->
+
 ### 正文
-安卓现在比较热火的四大框架应该是Rxjava，retrofit，Okhttp，Dagger。于是我去翻各种博文自己尝试着去写一个小demo。首先来看看我们这个小demo的一个效果图：![效果图.gif](https://user-gold-cdn.xitu.io/2019/5/22/16ade58f6d55d41b?w=453&h=776&f=gif&s=2286529)
+安卓现在比较热火的四大框架应该是Rxjava，retrofit，Okhttp，Dagger。于是我去翻各种博文自己尝试着去写一个小demo。首先来看看我们这个小demo的一个效果图：
+![效果图.gif](https://upload-images.jianshu.io/upload_images/8654767-a6d4e7bc2e4cc4dd.gif)
 可以看到我们这个demo就是调用了一个接口，有一个滑动列表，有图片，有的是视频，点进去可以观看视频。一个很简单的App DEMO。好了废话不多说，让我们开始吧！
 **第一**，先来看看我们整个项目引入的依赖：
 ```
@@ -27,7 +31,8 @@ tags: Android新技术笔记
     implementation 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
     implementation 'com.github.bumptech.glide:glide:4.6.1'
 ```
-其次来看看我们整个项目的一个结构图（MVP架构，直接用MVPHelper生成的）：![项目结构图](https://user-gold-cdn.xitu.io/2019/5/22/16ade58f6a4a30d7?w=361&h=702&f=png&s=38141)
+其次来看看我们整个项目的一个结构图（MVP架构，直接用MVPHelper生成的）：
+![项目结构图](https://upload-images.jianshu.io/upload_images/8654767-fe20d0e594d25a4e.png)
 现在来介绍一下整个项目结构：
 - contract包里面放的是接口，用来约束后面的开发；
 - model里面就是实体类对象和提供后台数据的请求接口；

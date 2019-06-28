@@ -86,7 +86,7 @@ public class QuanView extends RelativeLayout{
     </top.cyixlq.view.widght.QuanView>
 ```
 6. 运行后的结果如图所示：
-![20180327121717.png](https://user-gold-cdn.xitu.io/2018/10/23/1669fb8750dfa307?w=518&h=887&f=png&s=19545)
+![运行效果](https://upload-images.jianshu.io/upload_images/8654767-32c09c063b068bdc.png)
 7. 添加自定义属性，我们虽然能正常使用了，但是各个用户间需求不同我们还要能够自定义啊，这样才能用的舒心啊！首先就要在values目录下新建一个文件了，attrs.xml，然后在文件中加入以下代码：
 ```
 <?xml version="1.0" encoding="utf-8" ?>
@@ -129,7 +129,7 @@ xmlns:app="http://schemas.android.com/apk/res-auto"
 xmlns:cy="http://schemas.android.com/apk/res-auto"
 ```
 这时候在布局文件中的自定义组件的那一段代码报错了
-![命名空间报错了](https://user-gold-cdn.xitu.io/2018/10/23/1669fb8750d59579?w=671&h=235&f=png&s=27555)
+![命名空间报错了](https://upload-images.jianshu.io/upload_images/8654767-497fddcaff86b98d.png)
 这时候仅仅需要将布局中自定义的代码换成如下所示就可以了。（将app换成引入时候的名称cy）
 ```
 <top.cyixlq.view.widght.QuanView
@@ -142,6 +142,6 @@ xmlns:cy="http://schemas.android.com/apk/res-auto"
 ```
 这样是不是就具有标志性了呢？是不是更帅一点了呢？
 最后我们再来看看修改后的效果吧！
-![我们会发现锯齿变小了好多](https://user-gold-cdn.xitu.io/2018/10/23/1669fb875159a0ac?w=439&h=744&f=png&s=17843)
+![我们会发现锯齿变小了好多](https://upload-images.jianshu.io/upload_images/8654767-dd2464734a4bee30.png)
 
 #### 至此，我们一个简单的自定义View就到此为止啦!拜了个拜。。。

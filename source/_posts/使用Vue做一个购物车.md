@@ -12,7 +12,7 @@ tags: [Vue实战, vue, 购物车]
 web框架使用的是SpringMVC，模板框架是FreeMarker，想到以后要做移动端，果断还是用json来进行数据交互，并没有用freemarker。网页静态文件全部写好了，放在了springmvc的Views中。按理来说还是进行前后端分离好点的，但是做网页的没接触过Vue，那好吧。。。
 于是我就想到在页面直接引入Vue，可是又是在内网环境开发，只好在自己个人笔记本上下载vue.js再拷贝到内网电脑上进行页面上的引入。
 #### 真正文
-首先让我们看一下静态页面的效果图：![静态页面效果图](https://upload-images.jianshu.io/upload_images/8654767-b7bbde16f91309cf.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+首先让我们看一下静态页面的效果图：![静态页面效果图](https://upload-images.jianshu.io/upload_images/8654767-b7bbde16f91309cf.png)
 ##### 简单说一下这个功能模块的需求：
 1. 勾选全选，所有商品全部选中。在取消全选框的时候所有商品取消选择。
 2. 点击单个商品上的加号减号进行数量的增加和减少，右边小计实时计算出这个商品的价格合计。
@@ -90,7 +90,8 @@ window.onload = function () {
   <td><button v-on:click="checkDel(index)">删除</button></td>
 </tr> 
 ```
-这样就能将单个商品部分全部循环打印出来，并且将对应的信息打印在对应位置。效果图如下：![效果图，图中的图片名和路径是我编的，所以找不到](https://upload-images.jianshu.io/upload_images/8654767-ea638e93b0b0c21b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+这样就能将单个商品部分全部循环打印出来，并且将对应的信息打印在对应位置。效果图如下：
+![效果图，图中的图片名和路径是我编的，所以找不到](https://upload-images.jianshu.io/upload_images/8654767-ea638e93b0b0c21b.png)
 ***四***，实现全选和勾选时候总价的计算，这部分算是有点挑战了。我的思路是在Vue对象中新增加一个数据用来标识商品的选中状态，所以创建Vue方法中的代码改成如下所示：
 ```
 cart = new Vue({
@@ -180,8 +181,9 @@ minius (index) {
 
 ##### 至此，我们的需求就算是完成了，最后给大家留两个小问题思考一下
 ***一***，如何实现批量删除？
-***二***，在全选之后，我们取消了一个商品的状态，全选框的选中状态仍然是选中的，此时应该是不选中的，或者当我们一个一个把商品的选中状态全部勾选，全选框的状态仍然是补选中的，此时应该是选中状态（如下两图所示），这个现象如何解决？![问题二的现象一](https://upload-images.jianshu.io/upload_images/8654767-cdd1b5f82dfe7ff7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-![问题二的现象二](https://upload-images.jianshu.io/upload_images/8654767-aca0bb9e8f0ec645.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+***二***，在全选之后，我们取消了一个商品的状态，全选框的选中状态仍然是选中的，此时应该是不选中的，或者当我们一个一个把商品的选中状态全部勾选，全选框的状态仍然是补选中的，此时应该是选中状态（如下两图所示），这个现象如何解决？
+![问题二的现象一](https://upload-images.jianshu.io/upload_images/8654767-cdd1b5f82dfe7ff7.png)
+![问题二的现象二](https://upload-images.jianshu.io/upload_images/8654767-aca0bb9e8f0ec645.png)
 
 #### 后文
 本文的所有代码已经托管到GitHub，如果本文代码有误，请以GitHub上的为准，GitHub地址：https://github.com/cyixlq/vue_shopping_cart

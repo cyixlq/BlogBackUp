@@ -35,12 +35,12 @@ categories: Android
     > 它会在配置变更（即 Configuration Change，例如手机屏幕的旋转）之后继续存在。
     
     所以，ViewModel生命周期远比Activity，Fragment等生命周期更长，具体如下图所示。如果你这样做了，加入在屏幕旋转情况下，原Activity将会销毁，新的Activity将会被创建。而ViewModel会一直持有原Activity，这样便会造成内存泄漏。如果你的ViewModel确实需要Context，那么你的ViewModel可以继承AndroidViewModel，这样你的ViewModel中会有Application的引用。<br>
-    ![QQ截图20181029142003.png](https://user-gold-cdn.xitu.io/2018/10/29/166be937215a964e?w=513&h=455&f=png&s=93231)
+    ![ViewModel配置变更的生命周期](https://upload-images.jianshu.io/upload_images/8654767-3367001936c06aac.png)
 5. ViewModel不应当取代onSaveInstanceState方法。尽管ViewModel很出色了，但是它和onSaveInstanceState依然是相辅相成的作用。因为，当进程被关闭时，ViewModel将会被销毁，但是onSaveInstanceState不会受到影响。（个人猜想：比如在后台内存紧张情况下，你的应用处于后台被系统释放了，ViewModel会被销毁，但是你通过onSaveInstanceState存储下来的数据在你的应用重新回到前台时仍然可以被恢复）
-    ![QQ截图20181029143111.png](https://user-gold-cdn.xitu.io/2018/10/29/166be937219baa6a?w=684&h=244&f=png&s=108534)
+    ![QQ截图20181029143111.png](https://upload-images.jianshu.io/upload_images/8654767-0a4131db00ef8d7d.png)
 
 6. ViewModel与Activity生命周期对比图：
-    ![viewmodel-lifecycle.png](https://user-gold-cdn.xitu.io/2018/10/29/166be93721aea598?w=522&h=543&f=png&s=28358)
+    ![ViewModel与Activity生命周期对比图](https://upload-images.jianshu.io/upload_images/8654767-b7cb23337850512e.png)
 
 #### 四，ViewModel的用法
 1. 引入lifecycle库：

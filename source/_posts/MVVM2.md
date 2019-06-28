@@ -205,4 +205,4 @@ categories: Android
 
 [DataBinding使用教程（三）：各个注解详解](https://blog.csdn.net/qiang_xi/article/details/75379321)
 
-[DataBinding最全使用说明](https://juejin.im/post/5a55ecb6f265da3e4d7298e9#heading-19)
+[DataBinding最全使用说明](https://upload-images.jianshu.io/upload_images/8654767-386d9ceaa25b82d8.gif)
