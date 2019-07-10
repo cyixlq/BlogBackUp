@@ -49,7 +49,7 @@ $ gfxutil -f IGPU
 DevicePath = PciRoot(0x0)/Pci(0x2,0x0)
 ```
 这样我们确定了显卡路径之后，把`=`号之后的路径复制下来，填入如下图的所示的位置：
-![数据填入展示](https://upload-images.jianshu.io/upload_images/8654767-057f4a46b7255d48.png)
+{% qnimg 数据填入展示.png title:数据填入展示 alt:数据填入展示 %}
 
 
 ### 四，一些参数介绍（除了第6个值必须设置，其他可选）
@@ -101,10 +101,10 @@ PS：本文没有收录的可以使用Intel FB Patcher这个软件查询，或�
 这个按个人需要设置，如果需要屏蔽这个输出口，可以设置成FFFFFFFF，也就是最大的数字，让它足够靠后，这样就达到了屏蔽效果！
 
 * 最后，请注意，所有DATA数据类型需要将数据两两一组倒过来填入，例如：16260006转换之后就是这样06002616，如下图：
-![数据的填入](https://upload-images.jianshu.io/upload_images/8654767-53c6a2347ef503ac.png)
+{% qnimg 数据的填入.png title:数据的填入 alt:数据的填入 %}
 所以你也可以发现，用framebuffer-fbmem参数举例，当需要设置为48M之后它应填入的值是：`00000003`，这个也是转换后的值，所以原来的值应当是`03000000`，这是一个16进制的数字，转换成10进制是`50331648`。我们知道1M=1024KB，1KB = 1024B，所以，我们把转换成十进制之后的数字`50331648`除以1024然后再除以1024，得出的结果就是48了，所以这串数字代表的就是48M。[点击这里前往进制转换网页](https://tool.lu/hexconvert/)
 当然为了方便，你也可以直接像下图中切换成NUMBER数据类型，这样你就不用转换成16进制，不用倒过来输入（ig-platform必须为DATA）：
-![转换数据类型](https://upload-images.jianshu.io/upload_images/8654767-803da1810195ac8d.png)
+{% qnimg 转换数据类型.png title:转换数据类型 alt:转换数据类型 %}
 
 
 ## 后文
