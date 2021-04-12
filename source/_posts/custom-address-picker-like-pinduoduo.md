@@ -8,7 +8,7 @@ categories: Android
 公司正在开发一个商城项目，因为项目需要，做了一个仿拼多多的地址选择器，但是与拼多多实现方法有些出入，大体效果是差不多的。
 （2019年04月22日更新）最后决定还是单独提取出来做个demo给大家参考参考，地址：[https://github.com/cyixlq/AddressPickerDialog](https://github.com/cyixlq/AddressPickerDialog)
 废话不多说，先上一张效果动图：
-{% qnimg 地址选择器效果图.gif title:地址选择器效果图.gif alt:地址选择器效果图.gif %}`
+![地址选择器效果图.gif](/images/地址选择器效果图.gif)
 <!-- more -->
 ## 开始
 1. 先说说本文的一些概念。地区级别：就是比如省级，市级，县级，镇级，那么这种最多就是4级。
@@ -489,7 +489,7 @@ private List<AddressItem> requestAddress(int level, int parentID) {
 1. SparseArray是什么？SparseArray后面需要一个泛型，SparseArray<T>，可以理解为是HashMap<Integer, T>。但是为什么不用HashMap而使用这个东西？SparseArray是谷歌专门为安卓打造的Map，优点是省内存，占用内存没HashMap大。之前我的做法是省级列表数据一个list，市级一个list。。。这种写法，不但耦合度高，用户也不能自定义最大的地区级别是多少，而且在写法过程中少不了各种switch判断。后来灵机一动，Tab选中的position就是代表的一个级别，直接通过Map来取对应级别的list出来不就好了。
 2. SparseIntArray是什么？其实它就相当于SparseArray<Integer>，谷歌还为我们封装了其他基本数据类型的SparseArray，它们就是SparseBooleanArray和SparseLongArray，用法都是相似的。
 3. 为什么不使用一个成员变量来记录当前选中的tab的position，然后在onTabSelected中更新该成员变量？之前我是这么做的，但是会出奇怪的问题：在市级重新选择之后，移除后面的tab后再重新选县级之后，TabLayout的横线不会移动到镇级上了。不知道什么原因造成的，猜测可能是onTabSelected触发时机造成选中的Tab的position更新不及时。如果有知道的旁友还望不吝赐教。如下图：
-{% qnimg 地址选择器之前出现的问题.gif title:地址选择器之前出现的问题 alt:地址选择器之前出现的问题hexo %}`
+![地址选择器之前出现的问题](/images/地址选择器之前出现的问题.gif)
 
 #### 20190422更新
 1. 将AddressItem中的ID修改为Object类型，以适配不同业务数据，其他地方也进行了相应的修改

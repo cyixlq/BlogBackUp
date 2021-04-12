@@ -5,7 +5,7 @@ tags: [自定义View实战]
 categories: Android
 ---
 第一次尝试写一个下拉刷新控件，一开始的目的只是想了解dispatchTouchEvent，onInterceptTouchEvent和onTouchEvent这几个事件的分别，没想到最后竟然写了一个刷新控件。好的，废话不多说，先来看看效果图：
-{% qnimg 自定义下拉刷新效果图.gif title:自定义下拉刷新效果图.gif alt:自定义下拉刷新效果图.gif %}`
+![自定义下拉刷新效果图.gif](/images/自定义下拉刷新效果图.gif)
 
 <!-- more -->
 

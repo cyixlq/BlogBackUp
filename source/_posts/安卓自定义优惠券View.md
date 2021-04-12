@@ -8,7 +8,7 @@ tags: [自定义View实战]
 ### 欢迎来我的个人博客查看更多文章: [Cy的个人博客](https://cyixlq.top/)
 
 不久之前写过一篇基础的自定义View的博文，今天就来实践一下自定义View，参考了网上一个自定义View控件的博文完成的（毕竟还是小白）。以下是我完成的一些步骤：  
-1. 首先肯定需要编写一个类，让它继承自View（感觉我这个简单的自定义view继承RelativeLayout就够了），然后重写构造方法咯，这个简单，代码如下（一般大家都重写三个构造方法，虽然不太理解，但是对于我这个简单的自定义View是重写两个构造方法是能实现的）：
+1. 首先肯定需要编写一个类，让它继承自View（感觉我这个简单的自定义view继承RelativeLayout就够了），然后重写构造方法咯，这个简单，代码如下：
 ```
 public class QuanView extends RelativeLayout{
 
@@ -22,6 +22,8 @@ public class QuanView extends RelativeLayout{
 
 }
 ```
+<!-- more -->
+
 2. 然后就是初始化画笔，然后设定一些属性咯，所以现在的代码如下：
 ```
 public class QuanView extends RelativeLayout{
@@ -86,7 +88,7 @@ public class QuanView extends RelativeLayout{
     </top.cyixlq.view.widght.QuanView>
 ```
 6. 运行后的结果如图所示：
-![运行效果](https://upload-images.jianshu.io/upload_images/8654767-32c09c063b068bdc.png)
+![运行效果](/images/自定义优惠券View效果图.webp)
 7. 添加自定义属性，我们虽然能正常使用了，但是各个用户间需求不同我们还要能够自定义啊，这样才能用的舒心啊！首先就要在values目录下新建一个文件了，attrs.xml，然后在文件中加入以下代码：
 ```
 <?xml version="1.0" encoding="utf-8" ?>
@@ -129,7 +131,7 @@ xmlns:app="http://schemas.android.com/apk/res-auto"
 xmlns:cy="http://schemas.android.com/apk/res-auto"
 ```
 这时候在布局文件中的自定义组件的那一段代码报错了
-![命名空间报错了](https://upload-images.jianshu.io/upload_images/8654767-497fddcaff86b98d.png)
+![命名空间报错了](/images/自定义优惠券View命名空间报错.webp)
 这时候仅仅需要将布局中自定义的代码换成如下所示就可以了。（将app换成引入时候的名称cy）
 ```
 <top.cyixlq.view.widght.QuanView
@@ -142,6 +144,6 @@ xmlns:cy="http://schemas.android.com/apk/res-auto"
 ```
 这样是不是就具有标志性了呢？是不是更帅一点了呢？
 最后我们再来看看修改后的效果吧！
-![我们会发现锯齿变小了好多](https://upload-images.jianshu.io/upload_images/8654767-dd2464734a4bee30.png)
+![我们会发现锯齿变小了好多](/images/自定义优惠券View效果图2.webp)
 
 #### 至此，我们一个简单的自定义View就到此为止啦!拜了个拜。。。

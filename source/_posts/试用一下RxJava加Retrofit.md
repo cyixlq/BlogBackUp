@@ -11,7 +11,7 @@ tags: Android新技术笔记
 
 ### 正文
 安卓现在比较热火的四大框架应该是Rxjava，retrofit，Okhttp，Dagger。于是我去翻各种博文自己尝试着去写一个小demo。首先来看看我们这个小demo的一个效果图：
-![效果图.gif](https://upload-images.jianshu.io/upload_images/8654767-a6d4e7bc2e4cc4dd.gif)
+![效果图.gif](/images/试用RxJava加Retrofit效果图.gif)
 可以看到我们这个demo就是调用了一个接口，有一个滑动列表，有图片，有的是视频，点进去可以观看视频。一个很简单的App DEMO。好了废话不多说，让我们开始吧！
 **第一**，先来看看我们整个项目引入的依赖：
 ```
@@ -32,7 +32,7 @@ tags: Android新技术笔记
     implementation 'com.github.bumptech.glide:glide:4.6.1'
 ```
 其次来看看我们整个项目的一个结构图（MVP架构，直接用MVPHelper生成的）：
-![项目结构图](https://upload-images.jianshu.io/upload_images/8654767-fe20d0e594d25a4e.png)
+![项目结构图](/images/试用RxJava加Retrofit项目结构图.webp)
 现在来介绍一下整个项目结构：
 - contract包里面放的是接口，用来约束后面的开发；
 - model里面就是实体类对象和提供后台数据的请求接口；
